@@ -2,7 +2,7 @@ $.jStorage.set('profile', {
 	// parametri di connessione agli endpoint
 	'connection' : {
 		// base degli about dei documenti non dell'ontologia
-		'http://fr.dbpedia.org' : {
+		'http://lod.fuzzyinsights.com' : {
 			description : {
 				fr : 'DBpédia en français est le chapitre francophone de DBpedia, il s\'inscrit dans l\'effort d\'internationalisation de DBpedia dont le but est de maintenir des données structurées extraites de différents chapitres de Wikipedia.',
 				en : 'French version of DBpedia'
@@ -17,13 +17,13 @@ $.jStorage.set('profile', {
 				inverse : 'SELECT DISTINCT * WHERE {?object ?property <{URI}>} LIMIT 100',
 				inverseSameAs : 'SELECT DISTINCT * WHERE {?object <http://www.w3.org/2002/07/owl#sameAs> <{URI}>}'
 			},
-			endpoint : 'http://fr.dbpedia.org/sparql',
+			endpoint : 'http://lod.fuzzyinsights.com:3030/fuzzyinsights-beta/sparql',
 			examples : [{
-				uri : 'http://fr.dbpedia.org/resource/France',
-				label : 'France'
+				uri : 'http://lod.fuzzyinsights.com/author/alireza-abadi',
+				label : 'Alireza Abadi'
 			}, {
-				uri : 'http://fr.dbpedia.org/resource/Resource_Description_Framework',
-				label : 'Resource Description Framework'
+				uri : 'http://lod.fuzzyinsights.com/journal/jifs',
+				label : 'JIFS'
 			}]
 		},
 		'http://linked.opendata.cz' : {
