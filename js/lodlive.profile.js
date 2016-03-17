@@ -17,7 +17,7 @@ $.jStorage.set('profile', {
 				inverse : 'SELECT DISTINCT * WHERE {?object ?property <{URI}>} LIMIT 100',
 				inverseSameAs : 'SELECT DISTINCT * WHERE {?object <http://www.w3.org/2002/07/owl#sameAs> <{URI}>}'
 			},
-			endpoint : 'http://fr.dbpedia.org/sparql',
+			endpoint : 'http://lod.fuzzyinsights.com:3030/fuzzyinsights-beta/sparql',
 			examples : [{
 				uri : 'http://fr.dbpedia.org/resource/France',
 				label : 'France'
